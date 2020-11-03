@@ -1,4 +1,4 @@
-package com.cm.carboot.Service;
+package com.cm.carboot.service;
 
 import com.cm.carboot.domain.Car;
 import com.cm.carboot.domain.CarRepository;
