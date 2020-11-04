@@ -1,6 +1,6 @@
 package com.cm.carboot.domain;
 
-import com.cm.carboot.annotation.PII;
+import com.cm.carboot.annotation.PersonalInfo;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,7 +18,7 @@ public class Car extends AbstractPersistable<Long> {
 
     private String model;
 
-    @PII
+    @PersonalInfo
     private String owner;
 
 }

@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target({ ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PII {
+public @interface PersonalInfo {
     String severity() default "A";
     boolean encryptionRequired() default false;
 }

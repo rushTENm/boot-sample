@@ -26,11 +26,11 @@ public class CarController {
             .orElseThrow(() -> new RuntimeException("Not found: " + carId));
 
         // false case
-        log.info("model is not PII: {}", car.getModel());
-        log.info("meta data is not a PII: {}", car.getClass());
+        log.info("model is not PersonalInfo: {}", car.getModel());
+        log.info("meta data is not a PersonalInfo: {}", car.getClass());
         // true case
-        log.info("owner is PII {}", car.getOwner());
-        log.info("@ToString without \"of\" would expose PII: {}", car);
+        log.info("owner is PersonalInfo {}", car.getOwner());
+        log.info("@ToString without \"of\" would expose PersonalInfo: {}", car);
 
         return car;
     }
