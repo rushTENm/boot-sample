@@ -27,6 +27,7 @@ public class CarController {
 
         // false case
         log.info("model is not PersonalInfo: {}", car.getModel());
+        log.info("Id is not PersonalInfo: {}", car.getId());
         log.info("meta data is not a PersonalInfo: {}", car.getClass());
         // true case
         log.info("owner is PersonalInfo {}", car.getOwner());
@@ -46,6 +47,11 @@ public class CarController {
         }
 
         carService.saveCars(cars);
+
+        // false case
+        log.info("cars.size is not PersonalInfo: {}", cars.size());
+        // true case
+        log.info("@ToString without \"of\" would expose PersonalInfo: {}", cars);
 
         return cars;
     }
